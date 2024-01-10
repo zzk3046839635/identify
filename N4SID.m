@@ -72,5 +72,5 @@ ylabel('y(k) and yT(k)')
 %printsys(num2, den2);
 
 %eig(AT)
-ess=sqrt(sum((y(1:NN)-yT(1:NN)).^2)/sum(y(1:NN).^2))/NN;
+ess=sqrt(sum((y(1:NN)-yT(1:NN)).^2)/sum(y(1:NN).^2)/NN)*100;
 disp(ess);
